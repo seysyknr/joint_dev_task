@@ -36,42 +36,58 @@ $filter = array_filter($sports);
 print_r($filter);
 echo PHP_EOL;
 
-// print("#####q5#####".PHP_EOL);
-// $array1 = [];
-// $array2 = [1, 5, 8, 10];
+print("#####q5#####".PHP_EOL);
+$array1 = [];
+$array2 = [1, 5, 8, 10];
 
-//   # 以下に回答を記載
+  # 以下に回答を記載
+  $arrays = [ $array1, $array2];
+  foreach($arrays as $array){
+    if(empty($array)){
+      echo "true\n";
+    }else{
+      echo "false\n";
+    }
+  }
+echo PHP_EOL;
 
-// echo PHP_EOL;
+print("#####q6#####".PHP_EOL);
+$numbers1 = [1, 2, 3, 4, 5];
 
-// print("#####q6#####".PHP_EOL);
-// $numbers1 = [1, 2, 3, 4, 5];
+  # 以下に回答を記載
+$numbers2 = [];
+foreach($numbers1 as $number1){
+ $number2 = $number1 * 10;
+ $numbers2[] = $number2;
+}
+print_r($numbers2);
+print("#####q7#####".PHP_EOL);
+$array = ["1", "2", "3", "4", "5"];
 
-//   # 以下に回答を記載
+  # 以下に回答を記載
+foreach($array as &$value){
+  $value = intval($value);
+}
+unset($value);
+# 以下は変更しないで下さい
+var_dump($array);
 
-// echo PHP_EOL;
+echo PHP_EOL;
 
-// print("#####q7#####".PHP_EOL);
-// $array = ["1", "2", "3", "4", "5"];
+print("#####q8#####".PHP_EOL);
+$programming_languages = ["php","ruby","python","javascript"];
 
-//   # 以下に回答を記載
+# 以下に回答を記載
+$upper_case_programming_languages = [];
+foreach($programming_languages as $language){
+  $upper_case_programming_languages[] = strtoupper($language);
+}
+# 以下は変更しないで下さい
+print_r($programming_languages);
+echo PHP_EOL;
+print_r($upper_case_programming_languages);
 
-//   # 以下は変更しないで下さい
-// var_dump($array);
-
-// echo PHP_EOL;
-
-// print("#####q8#####".PHP_EOL);
-// $programming_languages = ["php","ruby","python","javascript"];
-
-//   # 以下に回答を記載
-
-//   # 以下は変更しないで下さい
-// print_r($programming_languages);
-// echo PHP_EOL;
-// print_r($upper_case_programming_languages);
-
-// echo PHP_EOL;
+echo PHP_EOL;
 
 // print("#####q9#####".PHP_EOL);
 // $names = ["田中", "佐藤", "佐々木", "高橋"];
