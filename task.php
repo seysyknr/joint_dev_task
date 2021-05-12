@@ -78,10 +78,9 @@ print("#####q8#####".PHP_EOL);
 $programming_languages = ["php","ruby","python","javascript"];
 
 # 以下に回答を記載
-$upper_case_programming_languages = [];
-foreach($programming_languages as $language){
-  $upper_case_programming_languages[] = strtoupper($language);
-}
+$programming_languages = array_map('ucfirst',$programming_languages);
+$upper_case_programming_languages = array_map('strtoupper',$programming_languages);
+
 # 以下は変更しないで下さい
 print_r($programming_languages);
 echo PHP_EOL;
