@@ -175,9 +175,9 @@ $data2 = [ "name" => "yamada", "hobby" => "baseball", "role" => "normal" ];
 $data3 = [$data1, $data2];
 foreach($data3 as $array_data){
   if(array_key_exists('age',$array_data)):
-  echo "OK" .PHP_EOL;
+   echo "OK" .PHP_EOL;
   else:
-  echo "NG" .PHP_EOL;
+    echo "NG" .PHP_EOL;
   endif;
 }
 
@@ -194,7 +194,7 @@ foreach($users as $user){
   echo "私の名前は{$user['name']}です。年齢は{$user['age']}歳です。";
   if(next($users)):
     echo "\n";
-  endif;
+  endif
 }; 
 echo PHP_EOL;
 
